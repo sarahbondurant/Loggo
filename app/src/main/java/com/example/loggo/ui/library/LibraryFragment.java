@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -17,6 +18,20 @@ import com.example.loggo.R;
 public class LibraryFragment extends Fragment {
 
     private LibraryViewModel libraryViewModel;
+    private LibraryRecyclerViewFragment libraryRecyclerViewFragment;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (savedInstanceState == null) {
+            // Initialize Recycler View
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            libraryRecyclerViewFragment = new LibraryRecyclerViewFragment();
+            transaction.replace(R.id.sample_content_fragment, libraryRecyclerViewFragment);
+            transaction.commit();
+        }
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
