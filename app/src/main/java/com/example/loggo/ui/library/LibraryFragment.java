@@ -38,13 +38,13 @@ public class LibraryFragment extends Fragment {
         libraryViewModel =
                 ViewModelProviders.of(this).get(LibraryViewModel.class);
         View root = inflater.inflate(R.layout.fragment_library, container, false);
-        final TextView textView = root.findViewById(R.id.text_library);
+        /*final TextView textView = root.findViewById(R.id.text_library);
         libraryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }
