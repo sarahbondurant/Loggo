@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3" >
+
+    <!-- TODO: add icons
+         TODO: make sure they're nice and big
+         TODO: uniform size-->
+
+    <!-- TODO: add this fragment somewhere so i can actually view and test it -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TV Shows"
+        android:drawableTop="@drawable/ic_tv_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:drawableTop="@drawable/ic_movie_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Games"
+        android:drawableTop="@drawable/ic_videogame_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books"
+        android:drawableTop="@drawable/ic_book_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classes"
+        android:drawableTop="@drawable/ic_school_black_24dp" />
+
+    <!-- TODO: decide whether to keep or not -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dishes"
+        android:drawableTop="@drawable/ic_cooking_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:drawableTop="@drawable/ic_music_black_24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Places"
+        android:drawableTop="@drawable/ic_location_black_24dp" />
+</GridLayout>
