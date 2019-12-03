@@ -28,4 +28,14 @@
         android:name="com.example.loggo.ui.social.SocialFragment"
         android:label="@string/title_social"
         tools:layout="@layout/fragment_social" />
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.example.loggo.ui.category.CategoryFragment"
+        android:label="@string/title_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_navigation_category_to_navigation_library"
+            app:destination="@id/navigation_library" />
+    </fragment>
 </navigation>
