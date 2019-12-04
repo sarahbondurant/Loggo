@@ -9,5 +9,12 @@
     <string name="title_category">Category Select</string>
 
     <!-- Backlog Icon Strings -->
-    <!-- TODO: figure out naming scheme -->
+    <string name="category_tv">TV Shows</string>
+    <string name="category_movie">Movies</string>
+    <string name="category_game">Video Games</string>
+    <string name="category_book">Books</string>
+    <string name="category_class">Classes</string>
+    <string name="category_cook">Cooking</string>
+    <string name="category_music">Music</string>
+    <string name="category_place">Places</string>
 </resources>

@@ -6,54 +6,60 @@
 
     <!-- TODO: improve general look of this fragment -->
 
-    <!-- TODO: add ids to all buttons -->
     <Button
         android:id="@+id/button_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TV Shows"
+        android:text="@string/category_tv"
         android:drawableTop="@drawable/ic_tv_black_24dp" />
 
     <Button
+        android:id="@+id/button_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Movies"
+        android:text="@string/category_movie"
         android:drawableTop="@drawable/ic_movie_black_24dp" />
 
     <Button
+        android:id="@+id/button_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Video Games"
+        android:text="@string/category_game"
         android:drawableTop="@drawable/ic_videogame_black_24dp" />
 
     <Button
+        android:id="@+id/button_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Books"
+        android:text="@string/category_book"
         android:drawableTop="@drawable/ic_book_black_24dp" />
 
     <Button
+        android:id="@+id/button_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Classes"
+        android:text="@string/category_class"
         android:drawableTop="@drawable/ic_school_black_24dp" />
 
     <!-- TODO: decide whether to keep or not -->
     <Button
+        android:id="@+id/button_cook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dishes"
+        android:text="@string/category_cook"
         android:drawableTop="@drawable/ic_cooking_black_24dp" />
 
     <Button
+        android:id="@+id/button_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Music"
+        android:text="@string/category_music"
         android:drawableTop="@drawable/ic_music_black_24dp" />
 
     <Button
+        android:id="@+id/button_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Places"
+        android:text="@string/category_place"
         android:drawableTop="@drawable/ic_location_black_24dp" />
 </GridLayout>
