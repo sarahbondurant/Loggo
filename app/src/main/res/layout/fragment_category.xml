@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:columnCount="3" >
 
-    <!-- TODO: add icons
-         TODO: make sure they're nice and big
-         TODO: uniform size-->
+    <!-- TODO: improve general look of this fragment -->
 
-    <!-- TODO: add this fragment somewhere so i can actually view and test it -->
+    <!-- TODO: add ids to all buttons -->
     <Button
+        android:id="@+id/button_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TV Shows"
