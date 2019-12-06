@@ -74,19 +74,7 @@ public class LibraryRecyclerViewFragment extends Fragment {
 
         mCurrentLayoutManagerType = LayoutManagerType.LINEAR_LAYOUT_MANAGER;
 
-        if (savedInstanceState != null) {
-            // Restore saved layout manager type.
-            mCurrentLayoutManagerType = (LayoutManagerType) savedInstanceState
-                    .getSerializable(KEY_LAYOUT_MANAGER);
-        }
-
-        int scrollPosition = 0;
-
-        mLayoutManager = new LinearLayoutManager(getActivity());
-        mCurrentLayoutManagerType = LayoutManagerType.LINEAR_LAYOUT_MANAGER;
-
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.scrollToPosition(scrollPosition);
 
         mAdapter = new LibraryAdapter(mDataset);
         // Set CustomAdapter as the adapter for RecyclerView.
@@ -108,6 +96,10 @@ public class LibraryRecyclerViewFragment extends Fragment {
      * from a local content provider or remote server.
      */
     private void initDataset() {
+        // TODO: grab data from db here
+        // TODO: add parameter for category type
+        // TODO: figure out how to query db based on category type
+
         mDataset = new String[DATASET_COUNT];
         for (int i = 0; i < DATASET_COUNT; i++) {
             mDataset[i] = "This is element #" + i;

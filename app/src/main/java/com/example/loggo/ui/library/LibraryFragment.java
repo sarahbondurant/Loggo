@@ -31,6 +31,8 @@ public class LibraryFragment extends Fragment {
             transaction.replace(R.id.sample_content_fragment, libraryRecyclerViewFragment);
             transaction.commit();
         }
+
+        // TODO: load db based on category
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
