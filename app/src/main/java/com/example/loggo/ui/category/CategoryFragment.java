@@ -13,11 +13,13 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.loggo.BacklogViewModel;
 import com.example.loggo.R;
 
 public class CategoryFragment extends Fragment implements View.OnClickListener {
 
     private CategoryViewModel categoryViewModel;
+    private BacklogViewModel backlogViewModel;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,22 +30,25 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
                              ViewGroup container, Bundle savedInstanceState) {
         categoryViewModel =
                 ViewModelProviders.of(this).get(CategoryViewModel.class);
+        backlogViewModel =
+                ViewModelProviders.of(this).get(BacklogViewModel.class);
         View root = inflater.inflate(R.layout.fragment_category, container, false);
 
         // Set OnClick Listener for all the buttons
         root.findViewById(R.id.button_tv).setOnClickListener(this);
+        root.findViewById(R.id.button_movie).setOnClickListener(this);
+        root.findViewById(R.id.button_game).setOnClickListener(this);
+        root.findViewById(R.id.button_book).setOnClickListener(this);
+        root.findViewById(R.id.button_class).setOnClickListener(this);
+        root.findViewById(R.id.button_cook).setOnClickListener(this);
+        root.findViewById(R.id.button_music).setOnClickListener(this);
+        root.findViewById(R.id.button_place).setOnClickListener(this);
 
         return root;
     }
 
     public void onClick(View v) {
-        // Set Backlog to be loaded to button pressed
-        switch (v.getId()) {
-            // TODO: all the buttons
-            case R.id.button_tv:
-                // TODO
-                break;
-        }
+        backlogViewModel.setBacklog(v.getId());
 
         // Navigate to library fragment
         NavHostFragment.findNavController(this).navigate(R.id.action_navigation_category_to_navigation_library);
