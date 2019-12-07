@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.example.loggo.ui.library.LibraryProvider"
+            android:authorities="com.example.loggo.ui.library"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
     </application>
 
 </manifest>

@@ -20,18 +20,19 @@ public class LibraryProvider extends ContentProvider {
     private static final String DBNAME = "LibraryDB";
     // Authority is the package name
     private static final String AUTHORITY = "com.example.loggo.ui.library";
+    // TODO: implement different tables
     //TABLE_NAME is defined as LibraryList
     private static final String TABLE_NAME = "LibraryList";
     //Create a CONTENT_URI for use by other classes
     public static final Uri CONTENT_URI =
             Uri.parse("content://" + AUTHORITY + "/"+TABLE_NAME);
 
-    // TODO: change these
     //Column names for the LibraryList Table
     public static final String TODO_TABLE_COL_ID = "_ID";
     public static final String TODO_TABLE_COL_TITLE = "TITLE";
-    public static final String TODO_TABLE_COL_CONTENT = "CONTENT";
-    public static final String TODO_TABLE_COL_COMPLETE = "COMPLETE";
+    public static final String TODO_TABLE_COL_ICON = "ICON";
+    public static final String TODO_TABLE_COL_GENRE = "GENRE";
+    public static final String TODO_TABLE_COL_COMPLETION = "COMPLETION";
     public static final String TODO_TABLE_COL_DTIME = "DTIME";
     //Table create string based on column names
     private static final String SQL_CREATE_MAIN = "CREATE TABLE " +
@@ -39,8 +40,9 @@ public class LibraryProvider extends ContentProvider {
             "(" +                           // The columns in the table
             TODO_TABLE_COL_ID + " INTEGER PRIMARY KEY, " +
             TODO_TABLE_COL_TITLE + " TEXT," +
-            TODO_TABLE_COL_CONTENT + " TEXT," +
-            TODO_TABLE_COL_COMPLETE + " BOOL," +
+            TODO_TABLE_COL_ICON + " TEXT," +
+            TODO_TABLE_COL_GENRE + " TEXT," +
+            TODO_TABLE_COL_COMPLETION + " INTEGER," +
             TODO_TABLE_COL_DTIME + " DATETIME)";
 
     //URI Matcher object to facilitate switch cases between URIs
