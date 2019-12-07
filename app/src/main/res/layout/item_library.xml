@@ -20,6 +20,9 @@
     android:gravity="center_vertical">
 
     <!-- TODO: icon -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <!-- TODO: text -->
     <TextView
