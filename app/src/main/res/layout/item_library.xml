@@ -19,9 +19,15 @@
     android:layout_marginRight="16dp"
     android:gravity="center_vertical">
 
+    <!-- TODO: icon -->
+
+    <!-- TODO: text -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="@style/LibItem"
         android:text="Element"/>
+
+    <!-- TODO: progress bar -->
 </FrameLayout>

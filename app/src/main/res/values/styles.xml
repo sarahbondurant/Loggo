@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Library Item -->
+    <style name="LibItem" parent="CardView">
+        <item name="android:textSize">22dp</item>
+    </style>
+
 </resources>
