@@ -92,4 +92,15 @@
         android:layout_marginBottom="20dp"
         android:text="@string/category_place"
         android:drawableTop="@drawable/ic_location_black_24dp" />
+
+    <Button
+        android:id="@+id/button_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Demo"
+        android:drawableTop="@drawable/ic_code_black_24dp" />
 </GridLayout>

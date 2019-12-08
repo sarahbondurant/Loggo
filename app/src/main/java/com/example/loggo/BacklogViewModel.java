@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel;
 
 public class BacklogViewModel extends ViewModel {
     public enum Category {
-        TV, MOVIE, GAME, BOOK, CLASS, COOK, MUSIC, PLACE
+        TV, MOVIE, GAME, BOOK, CLASS, COOK, MUSIC, PLACE, DEMO
     }
 
     // TODO: set default category
@@ -36,6 +36,9 @@ public class BacklogViewModel extends ViewModel {
                 break;
             case R.id.button_place:
                 category = Category.PLACE;
+                break;
+            case R.id.button_demo:
+                category = Category.DEMO;
                 break;
             default:
                 // uh oh... stinky

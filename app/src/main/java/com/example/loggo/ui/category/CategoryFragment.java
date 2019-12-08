@@ -43,6 +43,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         root.findViewById(R.id.button_cook).setOnClickListener(this);
         root.findViewById(R.id.button_music).setOnClickListener(this);
         root.findViewById(R.id.button_place).setOnClickListener(this);
+        root.findViewById(R.id.button_demo).setOnClickListener(this);
 
         return root;
     }
