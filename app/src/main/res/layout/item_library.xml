@@ -22,7 +22,7 @@
     android:layout_gravity="left"
     android:columnCount="2" >
 
-    <!-- TODO: icon -->
+    <!-- Item Icon -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="80dp"
@@ -30,7 +30,7 @@
         android:src="@drawable/ic_example_0"
         android:layout_rowSpan="2" />
 
-    <!-- TODO: text -->
+    <!-- Item Title -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -40,7 +40,8 @@
         android:textAppearance="@style/LibItem"
         android:text="Element"/>
 
-    <!-- TODO: progress bar -->
+    <!-- Item Progress Bar -->
+    <!-- TODO: style -->
     <ProgressBar
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
