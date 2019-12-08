@@ -54,10 +54,3 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         NavHostFragment.findNavController(this).navigate(R.id.action_navigation_category_to_navigation_library);
     }
 }
-
-/* TODO: button listener & navcontroller
-*        sends user to library fragment
-*        sends button selected data
-*        get rid of back button?
-*        on normal startup, library is loaded
-*        on first load, open category */

@@ -13,4 +13,9 @@
         <item name="android:textSize">22dp</item>
     </style>
 
+    <!-- Item Details -->
+    <style name="LibDetails" parent="AppTheme">
+        <item name="android:textSize">35dp</item>
+    </style>
+
 </resources>

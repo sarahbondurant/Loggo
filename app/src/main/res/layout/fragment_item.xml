@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:columnCount="2" >
+
+    <!-- Item Icon -->
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_example_0"
+        android:layout_rowSpan="2" />
+
+    <!-- Item Title -->
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:textAppearance="@style/LibDetails"
+        android:text="Element"/>
+
+    <!-- Item Progress Bar -->
+    <!-- TODO: style -->
+    <ProgressBar
+        android:id="@+id/item_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:progress="25" />
+
+    <TextView
+        android:id="@+id/item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/lorem"
+        android:layout_columnSpan="2"/>
+
+
+    <!-- TODO: more item details !! -->
+
+</GridLayout>

@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.loggo.R;
@@ -52,6 +53,8 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
                 @Override
                 public void onClick(View v) {
                     Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
+
+                    Navigation.findNavController(v).navigate(R.id.action_navigation_library_to_navigation_item);
                 }
             });
             textView = (TextView) v.findViewById(R.id.textView);
