@@ -20,6 +20,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,12 +29,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.loggo.R;
 
 /**
- * Provide views to RecyclerView with data from mDataSet.
+ * Provide views to RecyclerView with data from mDataset.
  */
 public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHolder> {
     private static final String TAG = "LibraryAdapter";
 
-    private String[] mDataSet;
+    private String[][] mDataset;
 
     // BEGIN_INCLUDE(recyclerViewSampleViewHolder)
     /**
@@ -40,6 +42,8 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
+        private final ImageView imageView;
+        private final ProgressBar progressBar;
 
         public ViewHolder(View v) {
             super(v);
@@ -51,10 +55,20 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
                 }
             });
             textView = (TextView) v.findViewById(R.id.textView);
+            imageView = (ImageView) v.findViewById(R.id.imageView);
+            progressBar = (ProgressBar) v.findViewById(R.id.progressBar);
         }
 
         public TextView getTextView() {
             return textView;
+        }
+
+        public ImageView getImageView() {
+            return imageView;
+        }
+
+        public ProgressBar getProgressBar() {
+            return progressBar;
         }
     }
     // END_INCLUDE(recyclerViewSampleViewHolder)
@@ -64,8 +78,8 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
      *
      * @param dataSet String[] containing the data to populate views to be used by RecyclerView.
      */
-    public LibraryAdapter(String[] dataSet) {
-        mDataSet = dataSet;
+    public LibraryAdapter(String[][] dataSet) {
+        mDataset = dataSet;
     }
 
     // BEGIN_INCLUDE(recyclerViewOnCreateViewHolder)
@@ -88,13 +102,15 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.ViewHold
 
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
-        viewHolder.getTextView().setText(mDataSet[position]);
+        viewHolder.getTextView().setText(mDataset[position][0]);
+        viewHolder.getImageView().setImageResource(Integer.valueOf(mDataset[position][1]));
+        viewHolder.getProgressBar().setProgress(Integer.valueOf(mDataset[position][2]));
     }
     // END_INCLUDE(recyclerViewOnBindViewHolder)
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return mDataSet.length;
+        return mDataset.length;
     }
 }

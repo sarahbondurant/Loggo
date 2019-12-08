@@ -12,25 +12,41 @@
  limitations under the License.
 -->
 
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
+    android:layout_height="80dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:gravity="center_vertical">
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="left"
+    android:columnCount="2" >
 
     <!-- TODO: icon -->
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_example_0"
+        android:layout_rowSpan="2" />
 
     <!-- TODO: text -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="6dp"
         android:textAppearance="@style/LibItem"
         android:text="Element"/>
 
     <!-- TODO: progress bar -->
-</FrameLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="6dp"
+        android:progress="25" />
+</GridLayout>

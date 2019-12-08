@@ -47,7 +47,7 @@ public class LibraryRecyclerViewFragment extends Fragment {
     protected RecyclerView mRecyclerView;
     protected LibraryAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
-    protected String[] mDataset;
+    protected String[][] mDataset;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -100,9 +100,26 @@ public class LibraryRecyclerViewFragment extends Fragment {
         // TODO: add parameter for category type
         // TODO: figure out how to query db based on category type
 
-        mDataset = new String[DATASET_COUNT];
-        for (int i = 0; i < DATASET_COUNT; i++) {
-            mDataset[i] = "This is element #" + i;
-        }
+        // Demo datasets for tv, movies, games
+        // Position 0: Game Title
+        // Position 1: Image Url
+        // Position 2: Progress value 0 - 11
+
+        mDataset = new String[4][3];
+        mDataset[0][0] = "Underfoot";
+        mDataset[0][1] = String.valueOf(R.drawable.ic_example_0);
+        mDataset[0][2] = "90";
+
+        mDataset[1][0] = "Firefoot";
+        mDataset[1][1] = String.valueOf(R.drawable.ic_example_1);
+        mDataset[1][2] = "20";
+
+        mDataset[2][0] = "Screemfoot";
+        mDataset[2][1] = String.valueOf(R.drawable.ic_example_2);
+        mDataset[2][2] = "60";
+
+        mDataset[3][0] = "Dealfoot";
+        mDataset[3][1] = String.valueOf(R.drawable.ic_example_3);
+        mDataset[3][2] = "50";
     }
 }
