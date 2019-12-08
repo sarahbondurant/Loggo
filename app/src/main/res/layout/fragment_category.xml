@@ -4,12 +4,14 @@
     android:layout_height="match_parent"
     android:columnCount="3" >
 
-    <!-- TODO: improve general look of this fragment -->
-
     <Button
         android:id="@+id/button_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_tv"
         android:drawableTop="@drawable/ic_tv_black_24dp" />
 
@@ -17,6 +19,10 @@
         android:id="@+id/button_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_movie"
         android:drawableTop="@drawable/ic_movie_black_24dp" />
 
@@ -24,6 +30,10 @@
         android:id="@+id/button_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_game"
         android:drawableTop="@drawable/ic_videogame_black_24dp" />
 
@@ -31,6 +41,10 @@
         android:id="@+id/button_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_book"
         android:drawableTop="@drawable/ic_book_black_24dp" />
 
@@ -38,6 +52,10 @@
         android:id="@+id/button_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_class"
         android:drawableTop="@drawable/ic_school_black_24dp" />
 
@@ -46,6 +64,10 @@
         android:id="@+id/button_cook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_cook"
         android:drawableTop="@drawable/ic_cooking_black_24dp" />
 
@@ -53,6 +75,10 @@
         android:id="@+id/button_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_music"
         android:drawableTop="@drawable/ic_music_black_24dp" />
 
@@ -60,6 +86,10 @@
         android:id="@+id/button_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/category_place"
         android:drawableTop="@drawable/ic_location_black_24dp" />
 </GridLayout>
