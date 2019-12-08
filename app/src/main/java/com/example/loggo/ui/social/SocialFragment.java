@@ -23,13 +23,13 @@ public class SocialFragment extends Fragment {
         socialViewModel =
                 ViewModelProviders.of(this).get(SocialViewModel.class);
         View root = inflater.inflate(R.layout.fragment_social, container, false);
-        final TextView textView = root.findViewById(R.id.text_social);
+        /*final TextView textView = root.findViewById(R.id.text_social);
         socialViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }
