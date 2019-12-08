@@ -19,7 +19,7 @@
         android:id="@+id/navigation_search"
         android:name="com.example.loggo.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_item" />
+        tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_notifications"
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/navigation_item"
-        android:name="com.example.loggo.ui.item.ItemFragment"
+        android:name="com.example.loggo.ui.demo.DemoFragment"
         android:label="@string/title_item"
         tools:layout="@layout/fragment_item" />
 </navigation>

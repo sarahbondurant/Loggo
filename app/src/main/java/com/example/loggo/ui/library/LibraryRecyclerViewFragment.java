@@ -108,7 +108,7 @@ public class LibraryRecyclerViewFragment extends Fragment {
         mDataset = new String[4][3];
         mDataset[0][0] = "Underfoot";
         mDataset[0][1] = String.valueOf(R.drawable.ic_example_0);
-        mDataset[0][2] = "90";
+        mDataset[0][2] = "33";
 
         mDataset[1][0] = "Firefoot";
         mDataset[1][1] = String.valueOf(R.drawable.ic_example_1);

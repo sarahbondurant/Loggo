@@ -25,7 +25,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:textAppearance="@style/LibTitle"
-        android:text="Element"/>
+        android:text="Underfoot"/>
 
     <!-- Item Progress Bar -->
     <!-- TODO: style -->
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="6dp"
-        android:progress="25" />
+        android:progress="33" />
 
     <TextView
         android:id="@+id/item_details"
@@ -56,7 +56,8 @@
         android:layout_marginTop="12dp"
         android:textAppearance="@style/LibDetails"
         android:text="Subtask 1"
-        android:layout_columnSpan="2" />
+        android:layout_columnSpan="2"
+        android:checked="true" />
 
     <CheckBox
         android:id="@+id/item_checkbox_1"
